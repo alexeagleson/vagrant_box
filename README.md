@@ -111,13 +111,13 @@ vagrant halt
 
 You can type 'vagrant up' again to start it up again anytime.
 
-To completely remove this virtual instance type:
+To completely remove this virtual instance type, from the directory you created it type:
 
 ```
 vagrant destroy
 ```
 
-From the directory where you created it.  Note this will not remove the base Ubuntu 14 box from your machine.  This means that next time you create a new project with this box and use 'vagrant up' it will not need to downlaod Ubuntu again.  If you are done and wish to free up the space, you can delete the box itself, which on Windows is found in:
+Note this will not remove the base Ubuntu 14 box from your machine.  This means that next time you create a new project with this box and use 'vagrant up' it will not need to downlaod Ubuntu again.  If you are done and wish to free up the space, you can delete the box itself, which on Windows is found in:
 
 ```
 ~YOUR_USERNAME/vagrant.d/boxes
