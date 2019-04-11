@@ -94,3 +94,32 @@ https://localhost:8082
 Port 8082 is forwarded to your virtual machine 443.  
 
 You may get a warning about being insecure since this is just a self-generated SSL certificate.  Click "advanced" and "proceed anyway" and the warning shouldn't appear again after that.  Obviously this isn't recommended for a live production site, but it works fine for testing.
+
+## How to exit / remove your environment
+
+To exit back to your terminal on your host machine simply type
+
+```
+exit
+```
+
+To shut down the virtual environment, but not remove it entirely, type:
+
+```
+vagrant halt
+```
+
+You can type 'vagrant up' again to start it up again anytime.
+
+To completely remove this virtual instance type:
+
+```
+vagrant destroy
+```
+
+From the directory where you created it.  Note this will not remove the base Ubuntu 14 box from your machine.  This means that next time you create a new project with this box and use 'vagrant up' it will not need to downlaod Ubuntu again.  If you are done and wish to free up the space, you can delete the box itself, which on Windows is found in:
+
+```
+~YOUR_USERNAME/vagrant.d/boxes
+```
+
