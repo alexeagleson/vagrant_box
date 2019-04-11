@@ -76,7 +76,7 @@ Now on your host machine, open a browser and navigate to http://localhost:8081. 
 From your vagrant directory run:
 
 ```
-./setup.sh
+./setup_ssl.sh
 ```
 
 You can just hit enter for each prompt.  Now you should also be able to access your index.html at https://localhost:8082.  Port 8082 is forwarded to your virtual machine 443.  
