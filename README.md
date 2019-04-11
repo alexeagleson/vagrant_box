@@ -27,7 +27,7 @@ Customized to include the following additions:
 
 ## Installation
 
-### Step 1
+### Step 1 = Create the virtual Ubuntu environment
 
 Make sure Vagrant is installed and available as a command on your terminal.  Create a new directory and clone this repo into it.
 
@@ -37,7 +37,7 @@ To create the environment, from the same directory as the Vagrantfile, run:
 vagrant up
 ```
 
-### Step 2
+### Step 2 - Login into Ubuntu via SSH
 
 Once the vagrant box has been installed you can access it by running:
 
@@ -45,7 +45,7 @@ Once the vagrant box has been installed you can access it by running:
 vagrant ssh
 ```
 
-### Step 3
+### Step 3 - Install the bundled software
 
 You should now have a terminal inside the Ubuntu environment.  To access the folder in your virtual environment that is linked to the one on your machine where you clonsed the repo navigate to:
 
@@ -65,7 +65,7 @@ You will be installing MySQL and phpmyadmin with these.  You will be prompted fo
 
 At one point during the installing it will reboot Apache and fail -- don't cancel just wait, after that you will be prompted to configure password in phpmyadmin, then when it reboots after that it will work fine.
 
-### Step 4
+### Step 4 - Test it out
 
 You're done!
 
