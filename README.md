@@ -23,6 +23,7 @@ Customized to include the following additions:
 * Composer
 * Yarn
 * Git
+* SSL Cert (Optional)
 
 ## Installation
 
