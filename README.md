@@ -27,7 +27,7 @@ Customized to include the following additions:
 
 ## Installation
 
-### Step 1 = Create the virtual Ubuntu environment
+### Step 1 - Create the virtual Ubuntu environment
 
 Make sure Vagrant is installed and available as a command on your terminal.  Create a new directory and clone this repo into it.
 
@@ -69,7 +69,13 @@ At one point during the installing it will reboot Apache and fail -- don't cance
 
 You're done!
 
-Now on your host machine, open a browser and navigate to http://localhost:8081.  Port 8081 is setup to be forwarded to port 80 on your virtual machine.  This should display the dummy index.html in your project directory!
+Now on your host machine, open a browser and navigate to:
+
+```
+http://localhost:8081
+```
+
+Port 8081 is configured to be forwarded to port 80 on your virtual machine.  This should display the dummy index.html in your project directory!
 
 ### Step 5 (Optional) - Setup SSL for HTTPS
 
@@ -79,6 +85,12 @@ From your vagrant directory run:
 ./setup_ssl.sh
 ```
 
-You can just hit enter for each prompt.  Now you should also be able to access your index.html at https://localhost:8082.  Port 8082 is forwarded to your virtual machine 443.  
+You can just hit enter for each prompt.  Now you should also be able to access your index.html at:
+
+```
+https://localhost:8082
+```
+
+Port 8082 is forwarded to your virtual machine 443.  
 
 You may get a warning about being insecure since this is just a self-generated SSL certificate.  Click "advanced" and "proceed anyway" and the warning shouldn't appear again after that.  Obviously this isn't recommended for a live production site, but it works fine for testing.
