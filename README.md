@@ -8,6 +8,22 @@ You must have the following installed:
 * Vagrant (https://www.vagrantup.com/downloads.html)
 * Oracle VirtualBox (https://www.virtualbox.org/wiki/Downloads)
 
+## Software included in this Vagrant box
+
+This custom box is built on the most popular Vagrant box for Ubunty 14 Trusty found here:
+
+https://app.vagrantup.com/boxes/search
+
+Customized to include the following additions:
+
+* Apache2
+* NodeJS v8
+* PHP 7.2
+* Phpmyadmin
+* Composer
+* Yarn
+* Git
+
 ## Installation
 
 ### Step 1
@@ -36,7 +52,7 @@ You should now have a terminal inside the Ubuntu environment.  To access the fol
 cd /vagrant
 ```
 
-You should be able to run an ls command and see your Vagrantfile and scripts.
+You should be able to run an 'ls' command and see your Vagrantfile and scripts.
 
 Now run the setup script type:
 
@@ -44,22 +60,13 @@ Now run the setup script type:
 ./setup.sh
 ```
 
-You will be installing MySQL and phpmyadmin with these.  You will be prompted for a lot of SQL passwords.  If you're just running this to test and not concerned with security you can just enter 'root' for everything yo uare prompted for.
+You will be installing MySQL and phpmyadmin with these.  You will be prompted for a lot of SQL passwords.  If you're just running this to test and not concerned with security you can just enter 'root' for everything you are prompted for.
 
 At one point during the installing it will reboot Apache and fail -- don't cancel just wait, after that you will be prompted to configure password in phpmyadmin, then when it reboots after that it will work fine.
 
 ### Step 4
 
-You're done!  You should now have an environment with all the following setup:
-
-* Ubuntu 14
-* Apache2
-* NodeJS v8
-* PHP 7.2
-* Phpmyadmin
-* Composer
-* Yarn
-* Git
+You're done!
 
 Now on your host machine, open a browser and navigate to http://localhost:8081.  Port 8081 is setup to be forwarded to port 80 on your virtual machine.  This should display the dummy index.html in your project directory!
 
